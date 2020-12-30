@@ -11,5 +11,4 @@ termux-notification --id "termux_ip_addr_notif" \
                     --on-delete "bash $dir/kill_ssh_process.sh" \
                     --button1 "Kill SSH Connection" \
                     --button1-action "bash $dir/kill_ssh_process.sh; termux-notification-remove termux_ip_addr_notif"
-
                     # --action "termux-toast $IP_ADDR" 
