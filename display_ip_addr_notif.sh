@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Print only our current ip address
 IP_ADDR=`ip -4 addr show wlan0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*'`
 dir="$(dirname "$(readlink -f "$0")")"
